@@ -28,7 +28,7 @@ class Example(QMainWindow, Ui_MainWindow):
             self.qp.end()
 
     def draw(self):
-        color = QColor(255, 255, 0)
+        color = QColor(randint(0, 255), randint(0, 255), randint(0, 255))
         size = randint(50, 150)
         self.qp.setPen(QColor(0, 0, 0))
         self.qp.setBrush(color)
